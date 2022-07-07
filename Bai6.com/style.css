@@ -1,0 +1,96 @@
+html{
+	background:rgb(204, 231, 240) url('images/backgrounds/bg.jpg') repeat-x 0 0;
+	min-width:960px;
+	overflow-y:scroll !important
+}
+.content{
+	width: 610px;
+}
+.tdleft-right{
+	width: 150px;
+	color: blue; 
+	font-weight: bold;	
+	background: #FFF;
+}
+.menu a:hover{
+	color: #FFF;
+}
+.tdmain{	
+	background: #FFF;
+}
+.footer{
+	color: red; 
+	font-weight: bold;
+	background: #34393e;
+}
+a{
+	text-decoration: none;	
+	color: #404040;
+}
+a:hover{
+	color: #ED055A;
+}
+
+/* Menu */
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 13px Verdana;
+width: 180px; /* Main Menu Item widths */
+border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: 444444;
+text-decoration: none;
+padding: 6px;
+border-bottom: 1px solid #c5e4ff;
+border-right: 1px solid #c5e4ff;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #eff8fb; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #444444;
+}
+
+.sidebarmenu ul li a:hover{
+background-color: #bbbbbb;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+/* Easy CSS Tooltip - by Koller Juergen [www.kollermedia.at] */
+
+* {font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size:12px; }
+
+a.tooltip span {display:none; padding:2px 3px; margin-left:8px; width:130px;}
+
+a.tooltip:hover span{display:inline; position:absolute; border:1px solid #cccccc; background:#000; color:#FFF;}
